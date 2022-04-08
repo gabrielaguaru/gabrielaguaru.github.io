@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gabriela Souza</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+    <nav data-menu="suave">
+       <p><a href="#home">&lsaquo;GS/&rsaquo;</a></p>
+       <button data-menu="button" aria-expanded="false" aria-controls="menu"></button>
+      <ul data-menu="list" id="menu">
+        <a href="#home">
+        <li>Home</li>
+      </a>
+        <a href="#sobre">
+          <li>Sobre</li>
+        </a>
+        <a href="#experiencia">
+        <li>Experiência</li>
+      </a>
+      <a href="#projetos">
+        <li>Projetos</li>
+      </a>
+      </ul>
+    </nav>
+  </header>
+
+    <main>
+      <section class="principal" id="home" >
+        <div class="principal__left">
+          <h1>Olá, eu sou</h1>
+          <div class="typing-container">
+            <span id="sentence"></span>
+            <span class="input-cursor"></span>
+          </div>
+          <h1>Desenvolvedora Front-End</h1>
+          <div class="principal__botao">
+            <a href="https://www.linkedin.com/in/gabrielasouza-/" target="_blank">
+              <div class="principal__botao-linkedin">
+                <img src="./assets/linkedin.png" alt="" />
+                <p>LinkedIn</p>
+              </div>
+            </a>
+            <a href="https://github.com/gabrielaguaru" target="_blank">
+              <div class="principal__botao-github">
+                <img src="./assets/github.png" alt="" />
+                <p>Github</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="principal__right">
+          <img src="./assets/code.svg" alt="" data-tilt>
+        </div>
+        
+        <div class="scroll" data-menu="suave"><a href="#sobre" > <p> scroll down </p> <img src="./assets/scroll.png" alt=""></a></div>
+      </section>
+      <section class="sobre-mim" id="sobre" data-anime="js-scroll">
+        <div class="sobre-mim__foto">
+          <img src="./assets/eu.png" alt="Uma selfie da Gabriela Souza" />
+        </div>
+        <div class="sobre-mim__descricao" >
+          <h1>Sobre mim</h1>
+          <h2>Guarujá, São Paulo</h2>
+          <p>
+            Olá! Sou biomédica e atualmente estou em transição de carreira com dedicação nos estudos para
+futuramente ser uma desenvolvedora fullstack. Em jul/2021 tomei a decisão de estudar por conta própria
+fazendo diversos cursos, e com 3 meses estudando consegui meu primeiro freelancer. Estou cursando Análise e Desenvolvimento de Sistemas na FIAP e continuo
+            meus estudos, tendo em mente que estamos sempre em constante aprendizado.
+          </p>
+          <div class="sobre-mim__descricao-buttons">
+            <a href="./assets/Gabriela Souza.pdf" download="">
+              <div class="sobre-mim__descricao-buttons-curriculo">
+                <img src="./assets/download-da-nuvem.png" alt="" />
+                <p>Currículo</p>
+              </div>
+            </a>
+            <a
+              href="mailto: gabrielaguaru@yahoo.com.br?subject=Gabi, vim pelo seu portfólio! :)"
+              target="_blank"
+            >
+              <div class="sobre-mim__descricao-buttons-email">
+                <img src="./assets/email.png" alt="" />
+                <p>E-mail</p>
+              </div>
+            </a>
+          </div>
+          
+        </div>
+      </section>
+      <section class="experiencia" id="experiencia" data-anime="js-scroll">
+        <h1>Experiência</h1>
+        <div class="experiencia__wrapper">
+          <section class="experiencia__lugares">
+            <ul data-tab="menu">
+              <li>??</li>
+              <li>My Epic Trip</li>
+              <li>HCFM-USP</li>
+            </ul>
+          </section>
+          <div class="experiencia__descricao" data-tab="content">
+            <section data-anime="show-right">
+              <h2>Em busca da minha primeira experiência "oficial" :)</h2>
+              <span>-</span>
+              <p class="experiencia__descricao-local">Quem sabe na sua empresa?</p>
+              <p>SADASDASDADSADA</p>
+            </section>
+            <section data-anime="show-right">
+            <h2>Desenvolvedora Front-End</h2>
+            <span>Out 2021 - Atual</span>
+            <p class="experiencia__descricao-local">My Epic Trip - Projeto Freelancer</p>
+            <p>
+              Minha primeira oportunidade na área da tecnologia, sendo o projeto
+              um aplicativo (porém feito em ReactJS) para empresas (localizadas
+              em Orlando - FL) que fornecem locação de casas/apartamentos, sendo
+              desenvolvido totalmente pensado na responsividade. Sou responsável
+              pelo front-end da aplicação, assim como integração com o backend.
+              Utiliza SCRUM como metodologia ágil, juntamente com Trello.
+              Projeto encaminhando para a fase final de desenvolvimento.
+            </p>
+          </section>
+          <section data-anime="show-right">
+            <h2>Pós Graduação / Estágio</h2>
+            <span>Mar 2021 - Jul 2021</span>
+            <p class="experiencia__descricao-local">Hospital das Clínicas da Faculdade de Medicina da USP</p>
+            <p>
+              Tive a oportunidade de passar no processo seletivo da pós graduação
+              com bolsa no maior hospital da América Latina. Pude vivenciar uma
+              experiência incrível lidando diretamente com todos os tipos de
+              pacientes, e que me proporcionou ver a vida com outros olhos.
+            </p>
+          </section>
+        </div>
+        </section>
+        </div>
+      </section>
+      <section class="projetos" id="projetos" data-anime="js-scroll">
+        <h1>Projetos</h1>
+        <div class="projetos__wrapper">
+          <article class="projetos__card">
+            <a href="https://gabrielaguaru.github.io/projeto%20css/projeto2index.html" target="_blank">
+            <img src="./assets/projeto1.png" alt="" class="projeto-img"/>
+            </a>
+            <h2>Vingadores</h2>
+            <p>
+              Meu primeiro projeto me aventurando na área de tecnologia, esse elaborado na minha terceira semana de estudos em HTML e CSS.
+            </p>
+            <span>Tecnologias usadas no projeto: HTML e CSS.</span>
+            <a href="https://gabrielaguaru.github.io/projeto%20css/projeto2index.html" target="_blank"
+              >
+              <div class="projetos__card-button">
+              <img src="./assets/link.png" alt="">
+              Visualizar
+            </div>
+            </a>
+          </article>
+          <section class="projetos__card">
+            <img src="./assets/projeto2.png" alt="" class="projeto-img"/>
+            <h2>Animais Fantásticos</h2>
+            <p>
+              Projeto desenvolvido a partir do curso de JavaScript ES6+ completo da Origamid, para por em prática meus estudos iniciais de JS. 
+            </p>
+            <span>Tecnologias usadas no projeto: HTML, CSS, JavaScript.</span>
+            <a href="#">
+              <div class="projetos__card-button">
+                <img src="./assets/link.png" alt="">
+                Visualizar
+              </div>
+            </a>
+          </section>
+          <section class="projetos__card">
+            <img src="./assets/projeto1.png" alt="" class="projeto-img"/>
+            <h2>Nome do projeto</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora,
+              optio labore molestiae 
+            </p>
+            <span>Tecnologias usadas no projeto</span>
+            <a href="#">
+              <div class="projetos__card-button">
+                <img src="./assets/link.png" alt="">
+                Visualizar
+              </div>
+            </a>
+          </section>
+        </div>
+        <!-- <p class="voltar" data-menu="suave"><a href="#home"> Voltar ao topo &uarr;</a></p> -->
+      </section>
+
+      <footer>
+        <p>Desenvolvido com muito <img src="./assets/heart.png" alt=""> por</p><span> Gabriela Souza</span>
+      </footer>
+    </main>
+
+    <script src="./js/script.js" type="module"></script>
+    <script src="./js/modules/vanilla-tilt.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+[data-menu="button"] {
+    display: none;
+}
+
+@media (max-width: 880px) {
+    nav {
+        padding: 0 5% !important;
+    }
+
+    [data-menu="button"] {
+        display: block;
+        background-color: #151515;
+        border: none;
+        border-top: 3px #00d2df solid;
+        padding: .8rem 1rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        position: relative;
+        z-index: 100;
+    }
+
+    [data-menu="button"]::before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        background-color: #00d2df;
+        transition: .3s transform;
+    }
+
+    [data-menu="button"]::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 50%;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        background-color: #00d2df;
+        transition: .3s transform;
+    }
+
+    [data-menu="button"].active::after {
+        transform: rotate(45deg);
+    }
+
+    [data-menu="button"].active::before {
+        transform: rotate(135deg);
+        top: 40%;
+    }
+
+    [data-menu="button"].active {
+        border-top: none;
+    }
+
+    [data-menu="list"] {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 1%;
+        box-shadow: 0 4px 4px rgba(0,0,0,.3);
+        background-color: #151515;
+        
+        padding: 82px 0 10px;
+        z-index: 50;
+        margin: 0;
+        font-family: "Inter", sans-serif;
+    }
+
+    [data-menu="list"].active {
+        display: block;
+        animation: show-down .3s forwards;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}
