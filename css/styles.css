@@ -540,6 +540,10 @@ a {
   background-color: #00bbc5;
 }
 
+::selection {
+  background-color: rgba(101, 24, 180, 1);
+}
+
 @media (max-width: 1325px) {
   .principal h1 {
     font-size: 1rem;
