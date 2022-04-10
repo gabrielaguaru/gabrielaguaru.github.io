@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Gabriela Souza">
+    <meta name="description" content="Portfólio da desenvolvedora front-end Gabriela C. de Souza">
+    <meta name="keywords" content="portfolio, html, front-end, desenvolvimento, css, javascript">
     <title>Gabriela Souza</title>
+    <link rel="icon" href="./icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
@@ -15,7 +19,7 @@
     <header>
     <nav data-menu="suave">
        <p><a href="#home">&lsaquo;GS/&rsaquo;</a></p>
-       <button data-menu="button" aria-expanded="false" aria-controls="menu"></button>
+       <button data-menu="button" aria-controls="menu"></button>
       <ul data-menu="list" id="menu">
         <a href="#home">
         <li>Home</li>
@@ -37,10 +41,8 @@
       <section class="principal" id="home" >
         <div class="principal__left">
           <h1>Olá, eu sou</h1>
-          <div class="typing-container">
-            <span id="sentence"></span>
-            <span class="input-cursor"></span>
-          </div>
+            <span class="principal__sentence"></span>
+            <span class="principal__input-cursor"></span>
           <h1>Desenvolvedora Front-End</h1>
           <div class="principal__botao">
             <a href="https://www.linkedin.com/in/gabrielasouza-/" target="_blank">
@@ -58,10 +60,10 @@
           </div>
         </div>
         <div class="principal__right">
-          <img src="./assets/code.svg" alt="" data-tilt>
+          <img src="./assets/code.svg" alt="Ilustração representando uma desenvolvedora sentada na cadeira mexendo no notebook com ambiente em volta." data-tilt>
         </div>
         
-        <div class="scroll" data-menu="suave"><a href="#sobre" > <p> scroll down </p> <img src="./assets/scroll.png" alt=""></a></div>
+        <div class="scroll" data-menu="suave"><a href="#sobre" > <p> scroll down </p> <img src="./assets/scroll.png" alt="Setinha indicando para rolar a tela para baixo"></a></div>
       </section>
       <section class="sobre-mim" id="sobre" data-anime="js-scroll">
         <div class="sobre-mim__foto">
@@ -72,9 +74,9 @@
           <h2>Guarujá, São Paulo</h2>
           <p>
             Olá! Sou biomédica e atualmente estou em transição de carreira com dedicação nos estudos para
-futuramente ser uma desenvolvedora fullstack. Em jul/2021 tomei a decisão de estudar por conta própria
-fazendo diversos cursos, e com 3 meses estudando consegui meu primeiro freelancer. Estou cursando Análise e Desenvolvimento de Sistemas na FIAP e continuo
-            meus estudos, tendo em mente que estamos sempre em constante aprendizado.
+            futuramente ser uma desenvolvedora fullstack. Em jul/2021 tomei a decisão de estudar por conta própria
+            fazendo diversos cursos, e com 3 meses estudando consegui meu primeiro freelancer. Estou cursando Análise e 
+            Desenvolvimento de Sistemas na FIAP e continuo meus estudos, tendo em mente que estamos sempre em constante aprendizado.
           </p>
           <div class="sobre-mim__descricao-buttons">
             <a href="./assets/Gabriela Souza.pdf" download="">
@@ -101,7 +103,7 @@ fazendo diversos cursos, e com 3 meses estudando consegui meu primeiro freelance
         <div class="experiencia__wrapper">
           <section class="experiencia__lugares">
             <ul data-tab="menu">
-              <li>??</li>
+              <li>&#128064&#128064</li>
               <li>My Epic Trip</li>
               <li>HCFM-USP</li>
             </ul>
@@ -109,9 +111,8 @@ fazendo diversos cursos, e com 3 meses estudando consegui meu primeiro freelance
           <div class="experiencia__descricao" data-tab="content">
             <section data-anime="show-right">
               <h2>Em busca da minha primeira experiência "oficial" :)</h2>
-              <span>-</span>
               <p class="experiencia__descricao-local">Quem sabe na sua empresa?</p>
-              <p>SADASDASDADSADA</p>
+              <p>Estou disponível para bater um papo, você pode entrar em contato via e-mail gabrielasouza.dev@gmail.com &#10024</p>
             </section>
             <section data-anime="show-right">
             <h2>Desenvolvedora Front-End</h2>
@@ -132,7 +133,7 @@ fazendo diversos cursos, e com 3 meses estudando consegui meu primeiro freelance
             <span>Mar 2021 - Jul 2021</span>
             <p class="experiencia__descricao-local">Hospital das Clínicas da Faculdade de Medicina da USP</p>
             <p>
-              Tive a oportunidade de passar no processo seletivo da pós graduação
+              Como biomédica tive a oportunidade de passar no processo seletivo da pós graduação
               com bolsa no maior hospital da América Latina. Pude vivenciar uma
               experiência incrível lidando diretamente com todos os tipos de
               pacientes, e que me proporcionou ver a vida com outros olhos.
@@ -145,8 +146,24 @@ fazendo diversos cursos, e com 3 meses estudando consegui meu primeiro freelance
       <section class="projetos" id="projetos" data-anime="js-scroll">
         <h1>Projetos</h1>
         <div class="projetos__wrapper">
-          <article class="projetos__card">
-            <a href="https://gabrielaguaru.github.io/projeto%20css/projeto2index.html" target="_blank">
+          <section class="projetos__card">
+            <a href="https://gabrielaguaru.github.io/animaisfantasticos/" target="_blank">
+            <img src="./assets/projeto2.png" alt="" class="projeto-img"/>
+          </a>
+            <h2>Animais Fantásticos</h2>
+            <p>
+              Projeto desenvolvido a partir do curso de JavaScript ES6+ completo da Origamid, para por em prática meus estudos iniciais de JS. 
+            </p>
+            <span>Tecnologias usadas no projeto: HTML, CSS, JavaScript.</span>
+            <a href="https://gabrielaguaru.github.io/animaisfantasticos/">
+              <div class="projetos__card-button">
+                <img src="./assets/link.png" alt="">
+                Visualizar
+              </div>
+            </a>
+          </section>
+          <section class="projetos__card">
+            <a href="https://gabrielaguaru.github.io/vingadores/" target="_blank">
             <img src="./assets/projeto1.png" alt="" class="projeto-img"/>
             </a>
             <h2>Vingadores</h2>
@@ -154,22 +171,24 @@ fazendo diversos cursos, e com 3 meses estudando consegui meu primeiro freelance
               Meu primeiro projeto me aventurando na área de tecnologia, esse elaborado na minha terceira semana de estudos em HTML e CSS.
             </p>
             <span>Tecnologias usadas no projeto: HTML e CSS.</span>
-            <a href="https://gabrielaguaru.github.io/projeto%20css/projeto2index.html" target="_blank"
+            <a href="https://gabrielaguaru.github.io/vingadores/" target="_blank"
               >
               <div class="projetos__card-button">
               <img src="./assets/link.png" alt="">
               Visualizar
             </div>
             </a>
-          </article>
+          </section>
           <section class="projetos__card">
-            <img src="./assets/projeto2.png" alt="" class="projeto-img"/>
-            <h2>Animais Fantásticos</h2>
+            <a href="https://gabrielaguaru.github.io/pokedex/" target="_blank">
+            <img src="./assets/projeto3.png" alt="" class="projeto-img"/>
+            </a>
+            <h2>Pokédex</h2>
             <p>
-              Projeto desenvolvido a partir do curso de JavaScript ES6+ completo da Origamid, para por em prática meus estudos iniciais de JS. 
+              Projeto realizado em ReactJS consumindo uma API de Pokémon
             </p>
-            <span>Tecnologias usadas no projeto: HTML, CSS, JavaScript.</span>
-            <a href="#">
+            <span>Tecnologias usadas no projeto: HTML, CSS, ReactJS, JSX.</span>
+            <a href="https://gabrielaguaru.github.io/pokedex/" target="_blank">
               <div class="projetos__card-button">
                 <img src="./assets/link.png" alt="">
                 Visualizar
@@ -177,26 +196,25 @@ fazendo diversos cursos, e com 3 meses estudando consegui meu primeiro freelance
             </a>
           </section>
           <section class="projetos__card">
-            <img src="./assets/projeto1.png" alt="" class="projeto-img"/>
-            <h2>Nome do projeto</h2>
+            <img src="./assets/projeto4.png" alt="" class="projeto-img"/>
+            <h2>Em breve</h2>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora,
-              optio labore molestiae 
+              Projeto sendo realizado em ReactJS.
             </p>
-            <span>Tecnologias usadas no projeto</span>
-            <a href="#">
+            <span>Tecnologias usadas no projeto: HTML, CSS, ReactJS, JSX.</span>
+           
               <div class="projetos__card-button">
                 <img src="./assets/link.png" alt="">
                 Visualizar
               </div>
-            </a>
+   
           </section>
         </div>
         <!-- <p class="voltar" data-menu="suave"><a href="#home"> Voltar ao topo &uarr;</a></p> -->
       </section>
 
       <footer>
-        <p>Desenvolvido com muito <img src="./assets/heart.png" alt=""> por</p><span> Gabriela Souza</span>
+        <p>Desenvolvido com muito <img src="./assets/heart.png" alt="Ícone de coração"> por</p><a href="https://www.linkedin.com/in/gabrielasouza-/"><span> Gabriela Souza</span></a>
       </footer>
     </main>
 

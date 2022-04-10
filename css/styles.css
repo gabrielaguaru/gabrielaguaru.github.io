@@ -38,6 +38,11 @@ footer p {
 footer span {
   color: #00d2df;
   font-weight: bold;
+  transition: .4s;
+}
+
+footer span:hover {
+  color: rgba(101, 24, 180, 1)
 }
 
 [data-anime="js-scroll"] {
@@ -208,7 +213,7 @@ a {
   letter-spacing: 3px;
 }
 
-.principal .input-cursor {
+.principal .principal__input-cursor {
   width: 3px;
   height: 42px;
   background-color: white;
@@ -284,6 +289,7 @@ a {
 .sobre-mim__descricao-buttons-email:hover,
 .projetos__card-button:hover {
   background-color: #272727;
+  text-shadow: 1px 1px 3px #00bbc5;
 }
 
 @keyframes move {
@@ -372,6 +378,7 @@ a {
 
 .sobre-mim__foto img:hover {
   filter: opacity(70%);
+  border-left: 5px solid rgba(101, 24, 180, 1);
 }
 
 .experiencia__wrapper {
@@ -502,6 +509,7 @@ a {
 
 .projeto-img:hover {
   transform: scale(110%);
+  border-left: 5px solid rgba(101, 24, 180, 1);
 }
 
 .voltar {
@@ -540,7 +548,7 @@ a {
     font-size: 2.2rem;
   }
 
-  .principal .input-cursor {
+  .principal .principal__input-cursor {
     height: 35px;
   }
 
@@ -557,7 +565,7 @@ a {
   .sobre-mim,
   .experiencia,
   .projetos {
-    padding: 20% 0;
+    padding: 22% 0;
     text-align: center;
   }
 
@@ -641,7 +649,7 @@ a {
     font-size: 1.8rem;
   }
 
-  .principal .input-cursor {
+  .principal .principal__input-cursor {
     height: 30px;
   }
 
