@@ -43,18 +43,9 @@
         transition: .3s transform;
     }
 
-    [data-menu="button"].active::after {
-        transform: rotate(45deg);
-    }
+    
 
-    [data-menu="button"].active::before {
-        transform: rotate(135deg);
-        top: 40%;
-    }
-
-    [data-menu="button"].active {
-        border-top: none;
-    }
+   
 
     [data-menu="list"] {
         display: none;
